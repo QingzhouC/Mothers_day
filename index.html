@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>母亲节快乐</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffe6f2;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #e75480;
+        }
+        .container {
+            position: relative;
+            width: 320px;
+            height: 320px;
+        }
+        .heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            width: 160px;
+            animation: pulseHeart 1.5s ease-in-out infinite;
+        }
+        .character {
+            position: absolute;
+            bottom: 0;
+            width: 90px;
+        }
+        .me { left: 10px; }
+        .brother { right: 10px; }
+        .mother { left: 50%; transform: translateX(-50%); }
+        @keyframes pulseHeart {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #d63384;
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>母亲节快乐！</h1>
+    <div class="container">
+        <img src="heart.png" alt="爱心" class="heart">
+        <img src="me.png" alt="我" class="character me">
+        <img src="mother.png" alt="妈妈" class="character mother">
+        <img src="brother.png" alt="弟弟" class="character brother">
+    </div>
+    <div class="message">
+        <p><strong>弟弟：</strong>我有你在我才是孩子，母亲节快乐！<br>我从未让你骄傲，你却待我如宝，母亲节快乐！<br>感谢您不是超人，却为我变成万能，母亲节快乐！</p>
+        <p><strong>我：</strong>妈咪，母亲节到啦！从小到大，您总是想尽办法满足我的需求，在背后默默保护我，让我能毫无顾虑地去闯荡。有您在，我就有了全世界最坚实的后盾，谢谢您，我永远爱您！最近作业太忙了，所以都没怎么跟您打电话，但是没事，暑假快到了，回来我们一起嗨玩！</p>
+    </div>
+</body>
+</html>
