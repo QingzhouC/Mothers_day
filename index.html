@@ -19,7 +19,7 @@
         }
         h1 {
             color: #e75480;
-            margin-bottom: 15px; /* Space between title and heart */
+            margin-bottom: 5px; /* Adjusted space between text and heart */
         }
         .container {
             position: relative;
@@ -32,17 +32,17 @@
         }
         .heart {
             position: absolute;
-            top: 10px; /* Space between heart and the text */
+            top: -35px; /* Reduced space between the heart and "母亲节快乐" */
             width: 120px;
             animation: pulseHeart 1.5s ease-in-out infinite;
         }
         .character {
             position: absolute;
             bottom: 0;
-            width: 60px;
+            width: 120px; /* Increased size of the characters */
         }
-        .me { left: 5px; }
-        .brother { right: 5px; }
+        .me { left: 0; }
+        .brother { right: 0; }
         .mother { left: 50%; transform: translateX(-50%); }
         @keyframes pulseHeart {
             0% { transform: scale(1); }
@@ -50,7 +50,7 @@
             100% { transform: scale(1); }
         }
         .message {
-            margin-top: 20px;
+            margin-top: 15px;
             font-size: 14px;
             color: #d63384;
             max-width: 80%;
