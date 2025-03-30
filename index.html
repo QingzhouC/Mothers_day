@@ -15,42 +15,46 @@
             text-align: center;
             font-family: 'Arial', sans-serif;
             padding: 20px;
+            margin: 0;
         }
         h1 {
             color: #e75480;
-            margin-bottom: 10px; /* Adjust the space below the text */
+            margin-bottom: 15px; /* Space between title and heart */
         }
         .container {
             position: relative;
-            width: 320px;
-            height: 320px;
+            width: 240px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .heart {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(1);
-            width: 160px;
+            top: 10px; /* Space between heart and the text */
+            width: 120px;
             animation: pulseHeart 1.5s ease-in-out infinite;
         }
         .character {
             position: absolute;
             bottom: 0;
-            width: 90px;
+            width: 60px;
         }
-        .me { left: 10px; }
-        .brother { right: 10px; }
+        .me { left: 5px; }
+        .brother { right: 5px; }
         .mother { left: 50%; transform: translateX(-50%); }
         @keyframes pulseHeart {
-            0% { transform: translate(-50%, -50%) scale(1); }
-            50% { transform: translate(-50%, -50%) scale(1.1); }
-            100% { transform: translate(-50%, -50%) scale(1); }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         .message {
             margin-top: 20px;
-            font-size: 16px;
+            font-size: 14px;
             color: #d63384;
-            max-width: 90%;
+            max-width: 80%;
+            word-wrap: break-word;
         }
     </style>
 </head>
